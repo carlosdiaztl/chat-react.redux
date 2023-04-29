@@ -30,7 +30,6 @@ const LoginI = () => {
       );
     } else if (isLoggedIn.user) {
       Swal.fire("Good job!", "Inicio de session exitoso", "success");
-      // navigate("/home");
     }
   }, [isLoggedIn, navigate]);
 

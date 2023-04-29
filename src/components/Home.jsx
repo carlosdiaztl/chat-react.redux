@@ -1,10 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
-import {
-  actionLoginAsync,
-  actionLogoutSync,
-} from "../redux/actions/userActions";
+import { actionLogoutSync } from "../redux/actions/userActions";
 import "../css/core.css";
 import "../css/theme-default.css";
 import "../js/perfect-scrollbar/perfect-scrollbar.css";
@@ -19,13 +16,12 @@ const Home = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(actionGetchatsAsync());
-    console.log(chat);
   }, [dispatch]);
 
   return (
     <div>
       <div className="container-xxl flex-grow-1 container-p-y">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <button
             className="btn btn-success mx-2  "
             onClick={() => dispatch(actionLogoutSync())}
@@ -33,7 +29,7 @@ const Home = () => {
             Logout
           </button>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#navbarNav"
@@ -41,10 +37,10 @@ const Home = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav"></ul>
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav"></ul>
           </div>
         </nav>
         <div className="app-chat card overflow-hidden">
