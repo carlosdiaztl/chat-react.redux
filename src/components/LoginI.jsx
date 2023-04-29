@@ -40,15 +40,15 @@ const LoginI = () => {
         <div className="authentication-wrapper authentication-basic container-p-y">
           <div className="authentication-inner py-4">
             <div className="card">
-              <div className="card-body">
+              <div className="card-body mb-5">
                 <div className="app-brand justify-content-center mb-4 mt-2">
                   <span className="app-brand-text demo text-body fw-bold ms-1">
                     Carlos app
                   </span>
                 </div>
 
-                <h4 className="mb-1 pt-2">Welcome to my app! 👋</h4>
-                <p className="mb-4">
+                <h4 className="mb-1 pt-2 text-center">Welcome to my app! 👋</h4>
+                <p className="mb-4 text-center">
                   Please sign-in to your account and start the adventure
                 </p>
 

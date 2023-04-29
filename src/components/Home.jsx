@@ -24,30 +24,29 @@ const Home = () => {
 
   return (
     <div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button
-          className="btn btn-success"
-          onClick={() => dispatch(actionLogoutSync())}
-        >
-          Logout
-        </button>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav"></ul>
-        </div>
-      </nav>
-
       <div className="container-xxl flex-grow-1 container-p-y">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <button
+            className="btn btn-success mx-2  "
+            onClick={() => dispatch(actionLogoutSync())}
+          >
+            Logout
+          </button>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav"></ul>
+          </div>
+        </nav>
         <div className="app-chat card overflow-hidden">
           <div className="row g-0">
             <div
